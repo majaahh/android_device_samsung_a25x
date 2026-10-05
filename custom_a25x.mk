@@ -8,7 +8,7 @@ $(call inherit-product, device/samsung/a25x/device.mk)
 
 # Device identifiers
 PRODUCT_DEVICE := a25x
-PRODUCT_NAME := lineage_a25x
+PRODUCT_NAME := custom_a25x
 PRODUCT_MODEL := SM-A256B
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
