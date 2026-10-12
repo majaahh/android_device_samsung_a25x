@@ -3,6 +3,5 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-require firmware.SM-E346B=E346BXXS8DYH1
-require firmware.SM-M346B=M346BXXS8DYH1
-require firmware.SM-M346B2=M346B2XUS8DYH1
+require firmware.SM-A256B=A256BXXS8CYG4
+require firmware.SM-A256E=A256EXXS8CYG3

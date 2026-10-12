@@ -31,19 +31,17 @@ blob_fixups: blob_fixups_user_type = {
         # Before: [
         #  mov x6,sp
         #  mov w0,#0x4
-        #  mov w5,#0x300
         #  mov w5,w21
-        #  bl 0x004120c0
+        #  bl 0x00412530
         # ]
         # After: [
-        #  ldr w0,[x19, #0xa20]
+        #  ldr w0,[x19, #0xa28]
         #  orr w0,w0,#0x10
-        #  str w0,[x19, #0xa20]
-        #  nop
+        #  str w0,[x19, #0xa28]
         #  nop
         # ]
-        .sig_replace('e6 03 00 91 80 00 80 52 04 60 80 52 e5 03 15 2a 7b e3 07 94',
-                     '60 22 4a b9 00 00 1c 32 60 22 0a b9 1f 20 03 d5 1f 20 03 d5')
+        .sig_replace('e6 03 00 91 80 00 80 52 e5 03 15 2a e4 e4 07 94',
+                     '60 2a 4a b9 00 00 1c 32 60 2a 0a b9 1f 20 03 d5')
         # Make checkFactoryBinProperty always return false
         # Before: [
         #  sub sp,sp,#90
@@ -58,7 +56,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'm34x',
+    'a25x',
     'samsung',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,

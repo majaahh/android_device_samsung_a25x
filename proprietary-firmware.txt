@@ -3,13 +3,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Proprietary firmware - from M346BXXU8EYI8, unless pinned
+# Proprietary firmware - from A256BXXU8DYI8, unless pinned
 
 # Modem
-modem.bin:modem.bin_SM-M346B
+modem.bin:modem.bin_SM-A256B
 
-# Modem - from SM-E346B - E346BXXS8EYJ2
-modem.bin_SM-E346B|c5a83a9f9dcc49158629e4a3c0100063dc02dda2
-
-# Modem - from SM-M346B2 - M346B2XUS8EYJ2
-modem.bin_SM-M346B2|d8f08d13d22d633311e3f975baa765bcee714712
+# Modem - from SM-A256E - A256EXXU8DYI8
+modem.bin_SM-A256E|f313a76ea3c56c15dbe0e930c089710588910f93
