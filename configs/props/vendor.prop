@@ -4,7 +4,8 @@
 #
 
 # Bluetooth
-bluetooth.device.default_name=Galaxy A53 5G
+bluetooth.device.default_name=Galaxy M34 5G
 
 # Fingerprint
-ro.vendor.fingerprint.sensor_location=540|2092|118
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.sensor_location=1080|820|350|local:4633128672291735932

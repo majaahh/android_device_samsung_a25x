@@ -3,4 +3,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := device/samsung/a53x/lineage_a53x.mk
+PRODUCT_MAKEFILES := device/samsung/m34x/lineage_m34x.mk

@@ -3,16 +3,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Proprietary firmware - from A536BXXUHGYI9, unless pinned
+# Proprietary firmware - from M346BXXU8EYI8, unless pinned
 
 # Modem
-modem.bin:modem.bin_SM-A536B
+modem.bin:modem.bin_SM-M346B
 
-# Modem - from SM-A5360 - A5360ZHUHGYI9
-modem.bin_SM-A5360|0c1a3ea5ac9358ec4a981af8ffdf42784de6bd26
+# Modem - from SM-E346B - E346BXXS8EYJ2
+modem.bin_SM-E346B|c5a83a9f9dcc49158629e4a3c0100063dc02dda2
 
-# Modem - from SM-A536E - A536EXXUHGYI9
-modem.bin_SM-A536E|f65fe2517f7ab8c074cd28ae40aa241df8745a00
-
-# Modem - from SM-A536N - A536NKOUCGYI2
-modem.bin_SM-A536N|1421fc054c4672b06a6f7ed621cf8e9aa3303a25
+# Modem - from SM-M346B2 - M346B2XUS8EYJ2
+modem.bin_SM-M346B2|d8f08d13d22d633311e3f975baa765bcee714712

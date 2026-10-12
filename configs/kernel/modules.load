@@ -109,6 +109,7 @@ tuihw.ko
 tuihw-inf.ko
 s2mpu13_mfd.ko
 s2mpu14_mfd.ko
+nfc_stm_sec.ko
 dma-buf-container.ko
 samsung_dma_heap.ko
 ufs-exynos-core.ko
@@ -149,13 +150,10 @@ i3c-hci-exynos.ko
 videobuf2-dma-sg.ko
 exynos_mfc.ko
 fimc-is.ko
-is-cis-gw1.ko
-is-cis-imx258.ko
-is-cis-gc5035.ko
-is-cis-imx616.ko
-is-cis-imx682.ko
-is-cis-hi1336.ko
-is-cis-gd2.ko
+is-cis-4ha.ko
+is-cis-gc02m2.ko
+is-cis-hi1339.ko
+is-cis-jn1.ko
 is-actuator-ak737x.ko
 is-flash-sm5714.ko
 pablo-smc.ko
@@ -168,6 +166,7 @@ mcfrc.ko
 smfc.ko
 scaler.ko
 repeater.ko
+fm_s620.ko
 ifpmic_class.ko
 exynos_thermal.ko
 gpu_cooling.ko
@@ -253,7 +252,8 @@ sec_debug_sched_report.ko
 vbus_notifier.ko
 sec_common_fn.ko
 dropdump.ko
-mcd-panel-s6e3fc3_a53x.ko
+mcd-panel-s6e3fc3_m34x.ko
+usdm-panel-oled-common.ko
 input_booster_lkm.ko
 sb-core.ko
 mesh.ko
@@ -266,11 +266,8 @@ abc_hub.ko
 goodix_ts_berlin.ko
 shub.ko
 sensor_core.ko
-nfc_slsi_sec.ko
 dc_vibrator.ko
-hall_ic.ko
-hall_ic_notifier.ko
-sx938x.ko
+a96t396.ko
 sec-direct-charger.ko
 sec_pd.ko
 sb_wireless.ko
@@ -285,7 +282,9 @@ exynos-bts.ko
 exynos-btsops8825.ko
 spu_verify.ko
 exynos-usb-audio-offloading.ko
+snd-soc-rl6231.ko
 sec_audio_sysfs.ko
+snd-soc-rt5691.ko
 snd-soc-tfa98xx.ko
 snd-soc-tfa_sysfs.ko
 snd-soc-s3c-dma.ko
@@ -295,6 +294,6 @@ snd-soc-samsung-abox-sync.ko
 snd-soc-samsung-vts-mailbox.ko
 snd-soc-samsung-vts.ko
 snd-soc-samsung-slif.ko
-exynos8825_audio.ko
+exynos8825_rt5691.ko
 sec_audio_debug.ko
 cfg80211.ko

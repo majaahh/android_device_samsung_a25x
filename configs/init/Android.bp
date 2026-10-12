@@ -4,8 +4,8 @@
 //
 
 prebuilt_etc {
-    name: "init.a53x.rc",
-    src: "init.a53x.rc",
+    name: "init.m34x.rc",
+    src: "init.m34x.rc",
     sub_dir: "init",
     vendor: true,
 }

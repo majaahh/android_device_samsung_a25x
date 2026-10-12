@@ -10,13 +10,13 @@ $(call inherit-product, device/samsung/s5e8825-common/common.mk)
 $(call inherit-product, device/samsung/s5e8825-common/products/phone/product.mk)
 
 # Inherit the device-specific vendor configuration
-$(call inherit-product, vendor/samsung/a53x/a53x-vendor.mk)
+$(call inherit-product, vendor/samsung/m34x/m34x-vendor.mk)
 
 # Audio - Configuration
 PRODUCT_PACKAGES += mixer_paths.xml
 
 # Audio - Effects - SoundBooster
-$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/a53x:lib_SoundBooster_ver1100)
+$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/m34x:lib_SoundBooster_ver1130)
 
 # Display - AOD
 $(call inherit-product, device/samsung/s5e8825-common/products/aod/product.mk)
@@ -24,20 +24,14 @@ $(call inherit-product, device/samsung/s5e8825-common/products/aod/product.mk)
 # Display - Configuration
 PRODUCT_PACKAGES += displayconfig.xml
 
-# Fingerprint
-$(call inherit-product, device/samsung/s5e8825-common/products/udfps/product.mk)
-
 # Init
-PRODUCT_PACKAGES += init.a53x.rc
+PRODUCT_PACKAGES += init.m34x.rc
 
 # Installer
-TARGET_ANDROID_INFO_EXTRA_FILE := device/samsung/a53x/configs/installer/android-info-extra.txt
+TARGET_ANDROID_INFO_EXTRA_FILE := device/samsung/m34x/configs/installer/android-info-extra.txt
 
 # NFC
-$(call inherit-product, device/samsung/s5e8825-common/products/sec_nfc/product.mk)
-
-# NFC - eSE
-PRODUCT_PACKAGES += android.hardware.secure_element-service.thales-st33
+$(call inherit-product, device/samsung/s5e8825-common/products/st_nfc/product.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -46,22 +40,17 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayDevice \
     WiFiOverlayDevice
 
-# Permissions
-PRODUCT_PACKAGES += \
-    android.hardware.nfc.ese.prebuilt.xml \
-    android.hardware.se.omapi.ese.prebuilt.xml
-
 # Properties
-TARGET_VENDOR_PROP += device/samsung/a53x/configs/props/vendor.prop
+TARGET_VENDOR_PROP += device/samsung/m34x/configs/props/vendor.prop
 
 # RIL
 TARGET_HAS_RIL := true
 
 # Shipping level
-PRODUCT_SHIPPING_API_LEVEL := 31
+PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Soong - Namespaces
-PRODUCT_SOONG_NAMESPACES += device/samsung/a53x
+PRODUCT_SOONG_NAMESPACES += device/samsung/m34x
 
 # Unify
 $(call inherit-product, device/samsung/s5e8825-common/products/unify/product.mk)
