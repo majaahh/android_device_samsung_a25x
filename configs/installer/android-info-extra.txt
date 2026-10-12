@@ -3,8 +3,5 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-require firmware.SM-A5360=A5360ZHSHFYI1
-require firmware.SM-A536B=A536BXXU1AVBB|A536BXXSDEYB1|A536BXXSHFYI1
-require firmware.SM-A536E=A536EXXSHFYI4
-require firmware.SM-A536N=A536NKSSCFYH1
-skip modem-flash-on-firmware.SM-A536B=A536BXXU1AVBB|A536BXXSDEYB1
+require firmware.SM-A256B=A256BXXS8CYG4
+require firmware.SM-A256E=A256EXXS8CYG3

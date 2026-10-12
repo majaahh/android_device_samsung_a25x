@@ -5,8 +5,8 @@
 -->
 <resources>
     <!-- Do not translate. Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Galaxy A53 5G</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Galaxy A25 5G</string>
 
     <!-- Do not translate. Default access point SSID used for local only hotspot -->
-    <string name="wifi_localhotspot_configure_ssid_default" translatable="false">Galaxy A53 5G</string>
+    <string name="wifi_localhotspot_configure_ssid_default" translatable="false">Galaxy A25 5G</string>
 </resources>
